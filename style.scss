@@ -1,0 +1,38 @@
+.logo {
+	height: 120px;
+	width: 120px;
+	position: relative;
+	margin: 2rem;
+	&-part {
+		position: absolute;
+		transform: translate(-50%, -50%);
+	}
+	.blue-triangle {
+		background: url(images/dw-logo-blue.svg) center/contain no-repeat;
+		top: 50%;
+		left: 50%;
+		height: 100%;
+		width: 100%;
+	}
+	.red-triangle {
+		background: url(images/dw-logo-red.svg) center/contain no-repeat;
+		top: 50%;
+		left: 43%;
+		height: 90%;
+		width: 90%;
+	}
+	.orange-triangle {
+		background: url(images/dw-logo-orange.svg) center/contain no-repeat;
+	    top: 40%;
+	    left: 47%;
+	    height: 93%;
+	    width: 93%;
+	}
+	.letter {
+		background: url(images/dw-logo-letter.svg) center/contain no-repeat;
+		height: 85%;
+		width: 85%;
+		left: 50%;
+		top: 25%;
+	}
+}
