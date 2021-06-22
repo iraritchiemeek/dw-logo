@@ -13,6 +13,8 @@
 		left: 50%;
 		height: 100%;
 		width: 100%;
+		transform: translate(-50%, -50%) rotate(-54deg);
+		animation: rotateBlue .3s cubic-bezier(.8,-.5,.2,1.4) forwards;
 	}
 	.red-triangle {
 		background: url(images/dw-logo-red.svg) center/contain no-repeat;
@@ -20,6 +22,8 @@
 		left: 43%;
 		height: 90%;
 		width: 90%;
+		transform: translate(-50%, -50%) rotate(60deg);
+		animation: rotateRed .3s cubic-bezier(.8,-.5,.2,1.4) forwards .3s;
 	}
 	.orange-triangle {
 		background: url(images/dw-logo-orange.svg) center/contain no-repeat;
@@ -27,6 +31,8 @@
 	    left: 47%;
 	    height: 93%;
 	    width: 93%;
+	    transform: translate(-50%, -50%) rotate(125deg);
+	    animation: rotateOrange .6s cubic-bezier(.8,-.5,.2,1.4) forwards .6s;
 	}
 	.letter {
 		background: url(images/dw-logo-letter.svg) center/contain no-repeat;
@@ -34,5 +40,49 @@
 		width: 85%;
 		left: 50%;
 		top: 25%;
+		opacity: 0;
+		animation: showLetter .6s ease-in forwards 1.2s;
 	}
 }
+
+@keyframes rotateBlue {
+	0% {
+		transform: translate(-50%, -50%) rotate(-54deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+}
+
+@keyframes rotateRed {
+	0% {
+		transform: translate(-50%, -50%) rotate(60deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+}
+
+@keyframes rotateOrange {
+	0%  {
+		transform: translate(-50%, -50%) rotate(125deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+}
+
+@keyframes showLetter {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
